@@ -1,0 +1,67 @@
+(done) 1. Generate markingsContainer
+(done) 7. Generate drawingBoard
+
+8. drawingBoard toggler method
+9. markingsContainer toggler method
+
+10. Showing previously drawn tiles on markingsContainer
+11. zoom and pan along with base image of markings
+12. toggle zoom pan blocking
+
+4. Drawing toolbox UI
+5. Drawing toolbox handlers
+3. Remove base image handlers
+2. Add drawingBoard handlers
+
+6. drawing on osd image as per the toolbox selections
+
+7. scroll issue
+-----------------------------------------------------------------
+
+DrawingTool(osd) {
+    var tb = ToolboxComponents(options);
+    
+    var markingOverlay = new Overlay(marking, osd, tb);
+    markingOverlay.hide();
+    
+    
+}
+
+ToolboxComponents(options) {
+    createElems() {
+    
+    }
+    updateSelections() {
+        tb.selected;
+    }
+}
+
+Overlay(id, osd) {
+    this.osd = osd;
+    
+    createOverlayElem() {
+    
+    }
+    hide() {
+    
+    }
+    show() {
+        updateMarkings()
+    }
+    mouseDownHandler() {
+        tb.selected;
+    }
+    mouseUpHandler() {
+        tb.selected;
+    }
+    mouseMoveHandler() {
+        tb.selected;
+    }
+    updateMarkings() {
+        this.osd;
+        
+    }
+    osd.addHandler('update', function() {
+        updateMarkings()
+    })
+}
